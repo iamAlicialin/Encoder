@@ -1,1 +1,4 @@
 # Encoder
+Developed a high-performance multithreaded tour encoding program in C. Implemented a robust thread pool through the use of pthreads; achieved up to 75% runtime reduction on large datasets larger than 1GB compared to the single-threaded version.
+Customized task data structures were designed using the concept of task queues to ensure balanced task workloads and efficient future merge processes; dynamic scheduling was used to allow simultaneous task encoding and merging, reducing processing latency.
+Mutual-exclusion locks and condition variables were utilized to prevent race conditions, busy waits, and deadlocks on shared data structures; fine-grained and read/write locks were used to minimize the amount of time spent holding mutual-exclusion locks and reduce contention between threads.
